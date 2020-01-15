@@ -1,0 +1,61 @@
+﻿@{
+
+}
+
+<h1>Select your Month and Day Below!</h1>
+
+<form method="post">
+    <input type="number" name="month" placeholder="Enter your Month as a number." style="width:260px"/>
+    <input type="number" name="day" placeholder="Enter your Day." />
+</form>
+
+@Html.DropDownList("Months", new List<SelectListItem>
+{
+    new SelectListItem{Text = "01"},
+    new SelectListItem{Text = "02"},
+    new SelectListItem{Text = "03"},
+    new SelectListItem{Text = "04"},
+    new SelectListItem{Text = "05"},
+    new SelectListItem{Text = "06"},
+    new SelectListItem{Text = "07"},
+    new SelectListItem{Text = "08"},
+    new SelectListItem{Text = "09"},
+    new SelectListItem{Text = "10"},
+    new SelectListItem{Text = "11"},
+    new SelectListItem{Text = "12"}
+},"Select a Month")
+
+@Html.DropDownList("Days", new List<SelectListItem> 
+{ 
+    new SelectListItem{Text = "01"},
+    new SelectListItem{Text = "02"},
+    new SelectListItem{Text = "03"},
+    new SelectListItem{Text = "04"},
+    new SelectListItem{Text = "05"},
+    new SelectListItem{Text = "06"},
+    new SelectListItem{Text = "07"},
+    new SelectListItem{Text = "08"},
+    new SelectListItem{Text = "09"},
+    new SelectListItem{Text = "10"},
+    new SelectListItem{Text = "11"},
+    new SelectListItem{Text = "12"},
+    new SelectListItem{Text = "13"},
+    new SelectListItem{Text = "14"},
+    new SelectListItem{Text = "15"},
+    new SelectListItem{Text = "16"},
+    new SelectListItem{Text = "17"},
+    new SelectListItem{Text = "18"},
+    new SelectListItem{Text = "19"},
+    new SelectListItem{Text = "20"},
+    new SelectListItem{Text = "21"},
+    new SelectListItem{Text = "22"},
+    new SelectListItem{Text = "23"},
+    new SelectListItem{Text = "24"},
+    new SelectListItem{Text = "25"},
+    new SelectListItem{Text = "26"},
+    new SelectListItem{Text = "27"},
+    new SelectListItem{Text = "28"},
+    new SelectListItem{Text = "29"},
+    new SelectListItem{Text = "30"},
+    new SelectListItem{Text = "31"}
+}, "Select a Day")
